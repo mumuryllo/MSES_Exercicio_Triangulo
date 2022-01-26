@@ -1,0 +1,3 @@
+INDEX VERSION 1.131
+C:\Users\Muryllo\Desktop\MSES_Exercicio_5\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3688930774.index
+\MSESExercicioTriangulo\src\main\java
