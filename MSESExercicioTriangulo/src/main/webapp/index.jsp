@@ -20,9 +20,9 @@ Segundo Lado <br>
 <input  type="number" name="n2"> <br>
 
 Terceiro Lado <br>
-<input  type="number" name="n3"> <br>
+<input  type="number" name="n3"> <br> <br>
 
-<button type="submit" ">Calcular</button>
+<button type="submit" ">Resultado</button>
 <br> <br>
 
 <p>
