@@ -42,6 +42,19 @@ public class CalcTriangulo extends HttpServlet {
 		int lado1 = Integer.parseInt(request.getParameter("n"));
 		int lado2 = Integer.parseInt(request.getParameter("n2"));
 		int lado3 = Integer.parseInt(request.getParameter("n3"));
+	      
+		
+		if (lado1 + lado2 > lado3 && lado1 + lado3 > lado2 && lado2 + lado3 > lado1){
+			response.getWriter().println(" E um triangulo");
+		}
+		
+		
+		
+		else {
+			response.getWriter().println(" Não É um triangulo");
+			
+		}
+		
 		
 		if(lado1 == lado2 && lado1 == lado3 || lado2 == lado1 && lado2 == lado3 || lado3 == lado1 && lado3 == 2) {
 			response.getWriter().println("ISSO É UM TRIÂNGULO EQUILÁTERO! ");     			
@@ -49,10 +62,14 @@ public class CalcTriangulo extends HttpServlet {
 		else if(lado1 == lado2 && lado1 != lado3 || lado1== lado3 && lado1 != lado2 || lado2 == lado1 && lado2 != lado3 || lado2 == lado3 && lado2 != 1 || lado3 == lado1 && lado3 != lado2 || lado3== lado2 && lado3 != lado1) {
 			response.getWriter().println("ISSO É UM TRIÂNGULO ISÓSCELES! ");     		
 		}
-		
 		else if(lado1 != lado2 && lado1 != lado3 || lado2 != lado1 && lado2 != lado3 || lado3 != lado1 && lado3 != 2) {
 			response.getWriter().println("ISSO É UM TRIÂNGULO ESCALENO! ");     			
-		}
+		}	
+			
+		
+
+		
+	
 	}
 	
 
